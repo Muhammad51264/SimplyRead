@@ -6,7 +6,6 @@ const Card = () => {
     let [filteredBooks,setFilteredBooks]=useState(Books);
     function search(e){
         let value = e.target.value.toLowerCase().replace(/\s/g, '');
-        
         setFilteredBooks(Books.filter(
         (book)=>
     book.title.toLowerCase().replace(/\s/g, '').includes(value) ||
@@ -22,7 +21,7 @@ const Card = () => {
         result=<h1 className='text-center pb-5'>No Books Found</h1>
     }else{
         result=filteredBooks.map((book,index)=>{
-            console.log(filteredBooks.length);
+            
     
         
             if(filteredBooks.length===index+1 && index%2===0){

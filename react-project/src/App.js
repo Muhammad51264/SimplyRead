@@ -9,6 +9,7 @@ function App() {
   return (
     <>
     <Nav/> 
+    
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<>
@@ -18,9 +19,7 @@ function App() {
               </div>
               </> }>
         </Route>
-        <Route path="/:bookId" element={<CardInfo/>}></Route>
-
-
+        <Route path="/:bookId" element={<CardInfo/>}></Route> 
 
         </Routes>
         </BrowserRouter>
